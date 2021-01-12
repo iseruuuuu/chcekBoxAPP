@@ -13,9 +13,12 @@
 		94682C3E25AD968E00ABFA0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94682C3C25AD968E00ABFA0F /* Main.storyboard */; };
 		94682C4025AD969000ABFA0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94682C3F25AD969000ABFA0F /* Assets.xcassets */; };
 		94682C4325AD969000ABFA0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94682C4125AD969000ABFA0F /* LaunchScreen.storyboard */; };
+		EDAFFF3D75B79EB5C14E5D98 /* Pods_chcekBoxAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CC6CD400573D3C0B8EE5D4 /* Pods_chcekBoxAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		002201926B0FD2724780DF8D /* Pods-chcekBoxAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chcekBoxAPP.debug.xcconfig"; path = "Target Support Files/Pods-chcekBoxAPP/Pods-chcekBoxAPP.debug.xcconfig"; sourceTree = "<group>"; };
+		6DD0F2E18CBCE6893EAE7033 /* Pods-chcekBoxAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chcekBoxAPP.release.xcconfig"; path = "Target Support Files/Pods-chcekBoxAPP/Pods-chcekBoxAPP.release.xcconfig"; sourceTree = "<group>"; };
 		94682C3325AD968E00ABFA0F /* chcekBoxAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chcekBoxAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94682C3625AD968E00ABFA0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94682C3825AD968E00ABFA0F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		94682C3F25AD969000ABFA0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94682C4225AD969000ABFA0F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		94682C4425AD969000ABFA0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CC6CD400573D3C0B8EE5D4 /* Pods_chcekBoxAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chcekBoxAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAFFF3D75B79EB5C14E5D98 /* Pods_chcekBoxAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		004E43772F83F82064835B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2CC6CD400573D3C0B8EE5D4 /* Pods_chcekBoxAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		94682C2A25AD968E00ABFA0F = {
 			isa = PBXGroup;
 			children = (
 				94682C3525AD968E00ABFA0F /* chcekBoxAPP */,
 				94682C3425AD968E00ABFA0F /* Products */,
+				A6D267AF70D47A1442EB2113 /* Pods */,
+				004E43772F83F82064835B93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,16 @@
 			path = chcekBoxAPP;
 			sourceTree = "<group>";
 		};
+		A6D267AF70D47A1442EB2113 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				002201926B0FD2724780DF8D /* Pods-chcekBoxAPP.debug.xcconfig */,
+				6DD0F2E18CBCE6893EAE7033 /* Pods-chcekBoxAPP.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94682C4725AD969000ABFA0F /* Build configuration list for PBXNativeTarget "chcekBoxAPP" */;
 			buildPhases = (
+				1B8E87B40541A7A5F9401D6A /* [CP] Check Pods Manifest.lock */,
 				94682C2F25AD968E00ABFA0F /* Sources */,
 				94682C3025AD968E00ABFA0F /* Frameworks */,
 				94682C3125AD968E00ABFA0F /* Resources */,
+				C0A692CB985422BCA8A0F733 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1B8E87B40541A7A5F9401D6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chcekBoxAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0A692CB985422BCA8A0F733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chcekBoxAPP/Pods-chcekBoxAPP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chcekBoxAPP/Pods-chcekBoxAPP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chcekBoxAPP/Pods-chcekBoxAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		94682C2F25AD968E00ABFA0F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		94682C4825AD969000ABFA0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 002201926B0FD2724780DF8D /* Pods-chcekBoxAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		94682C4925AD969000ABFA0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DD0F2E18CBCE6893EAE7033 /* Pods-chcekBoxAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
